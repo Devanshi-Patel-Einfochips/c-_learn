@@ -13,7 +13,7 @@ class Account{
     float acc_balance;
     public:
     Account(const string& acc_name, float acc_balance);
-     ~Account();
+    virtual ~Account();
     const string get_name() const;
     int getAccountNo() const;
      float getInterestRate() const;

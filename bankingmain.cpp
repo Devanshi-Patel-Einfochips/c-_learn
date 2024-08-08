@@ -10,13 +10,14 @@
 using namespace std;
 
 int main(){
-    // checking acc("dev",10000);
+    Savings acc("dev",10000, 0.05f);
     // cout << "Initial balance: " << acc.getBalance() << endl;
     // // acc.Deposit(500);
     // acc.withdraw(9980);
     // cout << "New balance: " << acc.getBalance() << endl;
     // Savings acc("devs", 10000, 0.05f);
-    Savings *acc = new Savings("devs", 10000, 0.05f);
-    // transact_fun(acc);
-    delete acc;
+    // Savings *acc = new Savings("devs", 10000, 0.05f);
+    
+    transact_fun(&acc);
+    // delete acc;
 };

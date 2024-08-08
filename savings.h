@@ -11,6 +11,6 @@ class Savings: public Account{
     void AccumulateInterest();
     Savings(string const &name, float balance, float rate);
 
-     ~Savings();
+    virtual ~Savings();
 
 };
